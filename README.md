@@ -1,7 +1,7 @@
 # CI SETUP
 
 # Create linux server
-Install docker, ansible,redis,ansible here (ansible,redis,ansible can be through docker)
+Install docker, ansible,redis,kafka here (ansible,redis,kafka can be through docker)
 ````
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl
@@ -25,4 +25,10 @@ sudo systemctl status docker
 
 docker --version
 ````
+Pull ansible,redis,kafka from docker
 
+````
+docker pull redis:latest
+docker pull bitnami/kafka:latest
+docker pull williamyeh/ansible:alpine3
+````
